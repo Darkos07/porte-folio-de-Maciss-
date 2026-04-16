@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Macissé Lo - Portfolio Étudiant en Génie Informatique</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <!-- Personnalisation Tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary': '#1e3c72',
+                        'secondary': '#2a5298',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Animations personnalisées */
+        .hover-lift {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .hover-lift:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        .project-link {
+            transition: gap 0.3s ease;
+        }
+        .project-link:hover {
+            gap: 0.75rem;
+        }
+        .contact-link {
+            transition: all 0.3s ease;
+        }
+        .contact-link:hover {
+            background: rgba(255,255,255,0.3);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-gray-50 to-gray-300 font-sans p-4 md:p-8">
+    <div class="max-w-6xl mx-auto bg-white rounded-3xl shadow-2xl overflow-hidden">
+        
+        <!-- Header -->
+        <header class="bg-gradient-to-r from-primary to-secondary text-white py-12 px-6 md:py-16 md:px-12 text-center">
+            <h1 class="text-3xl md:text-5xl font-bold mb-2">Macissé Lo</h1>
+            <p class="text-lg md:text-xl opacity-95">🎓 Étudiant en 2e année – Génie Informatique</p>
+            <div class="flex flex-wrap justify-center gap-3 mt-6">
+                <a href="https://github.com/macisselo" target="_blank" class="inline-flex items-center gap-2 bg-white/20 rounded-full px-4 py-2 hover:bg-white/30 contact-link">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="https://linkedin.com/in/macisselo" target="_blank" class="inline-flex items-center gap-2 bg-white/20 rounded-full px-4 py-2 hover:bg-white/30 contact-link">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="mailto:macisse.lo@esp.sn" class="inline-flex items-center gap-2 bg-white/20 rounded-full px-4 py-2 hover:bg-white/30 contact-link">
+                    <i class="fas fa-envelope"></i> macisse.lo@esp.sn
+                </a>
+                <a href="#" class="inline-flex items-center gap-2 bg-white/20 rounded-full px-4 py-2 hover:bg-white/30 contact-link">
+                    <i class="fas fa-map-marker-alt"></i> Ouakam, Dakar
+                </a>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="py-10 px-6 md:py-12 md:px-12">
+            
+            <!-- À propos -->
+            <section class="mb-12">
+                <div class="flex items-center gap-3 border-b-3 border-primary pb-2 mb-5">
+                    <i class="fas fa-user-astronaut text-2xl text-primary"></i>
+                    <h2 class="text-2xl md:text-3xl font-semibold text-primary">À propos</h2>
+                </div>
+                <p class="text-gray-700 leading-relaxed">
+                    Étudiant passionné en 2e année de Génie Informatique, je suis curieux, autonome et j'aime relever des défis techniques. 
+                    Je maîtrise les bases solides en algorithmique, programmation et développement web.
+                </p>
+            </section>
+
+            <!-- Compétences Techniques -->
+            <section class="mb-12">
+                <div class="flex items-center gap-3 border-b-3 border-primary pb-2 mb-5">
+                    <i class="fas fa-code text-2xl text-primary"></i>
+                    <h2 class="text-2xl md:text-3xl font-semibold text-primary">Compétences Techniques</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- Langages -->
+                    <div class="bg-gray-50 rounded-2xl p-6 hover-lift">
+                        <h3 class="text-primary font-semibold text-lg mb-4"><i class="fas fa-laptop-code mr-2"></i> Langages</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-center gap-2"><i class="fab fa-python text-primary"></i> Python</li>
+                            <li class="flex items-center gap-2"><i class="fab fa-java text-primary"></i> Java</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-code text-primary"></i> C</li>
+                            <li class="flex items-center gap-2"><i class="fab fa-js text-primary"></i> JavaScript</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-database text-primary"></i> SQL</li>
+                        </ul>
+                    </div>
+                    <!-- Web -->
+                    <div class="bg-gray-50 rounded-2xl p-6 hover-lift">
+                        <h3 class="text-primary font-semibold text-lg mb-4"><i class="fas fa-globe mr-2"></i> Web</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-center gap-2"><i class="fab fa-html5 text-primary"></i> HTML5/CSS3</li>
+                            <li class="flex items-center gap-2"><i class="fab fa-react text-primary"></i> React (débutant)</li>
+                            <li class="flex items-center gap-2"><i class="fab fa-node-js text-primary"></i> Node.js (bases)</li>
+                            <li class="flex items-center gap-2"><i class="fab fa-tailwind text-primary"></i> Tailwind CSS</li>
+                        </ul>
+                    </div>
+                    <!-- Outils -->
+                    <div class="bg-gray-50 rounded-2xl p-6 hover-lift">
+                        <h3 class="text-primary font-semibold text-lg mb-4"><i class="fas fa-tools mr-2"></i> Outils & Méthodes</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-center gap-2"><i class="fab fa-git-alt text-primary"></i> Git/GitHub</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-code-branch text-primary"></i> Linux/VS Code</li>
+                            <li class="flex items-center gap-2"><i class="fab fa-docker text-primary"></i> Docker (bases)</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-project-diagram text-primary"></i> UML</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projets -->
+            <section class="mb-12">
+                <div class="flex items-center gap-3 border-b-3 border-primary pb-2 mb-5">
+                    <i class="fas fa-folder-open text-2xl text-primary"></i>
+                    <h2 class="text-2xl md:text-3xl font-semibold text-primary">Projets Académiques</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Projet 1 -->
+                    <div class="bg-gray-50 rounded-2xl p-6 border-l-4 border-primary hover-lift">
+                        <h3 class="text-xl font-semibold mb-2">📝 Gestionnaire de tâches CLI</h3>
+                        <span class="inline-block bg-primary text-white text-xs rounded-full px-3 py-1 mb-3">Python</span>
+                        <p class="text-gray-600 text-sm mb-4">Application en ligne de commande avec ajout, suppression, priorisation des tâches. Sauvegarde automatique au format JSON.</p>
+                        <a href="#" class="inline-flex items-center gap-2 text-primary font-medium project-link">Voir sur GitHub <i class="fas fa-arrow-right text-xs"></i></a>
+                    </div>
+                    <!-- Projet 2 -->
+                    <div class="bg-gray-50 rounded-2xl p-6 border-l-4 border-primary hover-lift">
+                        <h3 class="text-xl font-semibold mb-2">🌐 Site vitrine – Association</h3>
+                        <span class="inline-block bg-primary text-white text-xs rounded-full px-3 py-1 mb-3">HTML/CSS/JS</span>
+                        <p class="text-gray-600 text-sm mb-4">Design responsive, formulaire de contact dynamique, carrousel d'images et navigation fluide. Hébergé sur GitHub Pages.</p>
+                        <a href="#" class="inline-flex items-center gap-2 text-primary font-medium project-link">Voir le site <i class="fas fa-arrow-right text-xs"></i></a>
+                    </div>
+                    <!-- Projet 3 -->
+                    <div class="bg-gray-50 rounded-2xl p-6 border-l-4 border-primary hover-lift">
+                        <h3 class="text-xl font-semibold mb-2">📚 Gestion d'étudiants – CRUD</h3>
+                        <span class="inline-block bg-primary text-white text-xs rounded-full px-3 py-1 mb-3">Java + SQLite</span>
+                        <p class="text-gray-600 text-sm mb-4">Application complète avec interface console permettant d'ajouter, modifier, supprimer et rechercher des étudiants. Architecture MVC.</p>
+                        <a href="#" class="inline-flex items-center gap-2 text-primary font-medium project-link">Voir sur GitHub <i class="fas fa-arrow-right text-xs"></i></a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Certifications -->
+            <section class="mb-12">
+                <div class="flex items-center gap-3 border-b-3 border-primary pb-2 mb-5">
+                    <i class="fas fa-certificate text-2xl text-primary"></i>
+                    <h2 class="text-2xl md:text-3xl font-semibold text-primary">Certifications & Formations</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                    <div class="bg-gray-50 rounded-xl p-4 flex items-center gap-3">
+                        <i class="fas fa-shield-alt text-primary text-xl"></i>
+                        <span>Introduction à la cybersécurité – Cisco Networking Academy</span>
+                    </div>
+                    <div class="bg-gray-50 rounded-xl p-4 flex items-center gap-3">
+                        <i class="fas fa-database text-primary text-xl"></i>
+                        <span>SQL pour débutants – OpenClassrooms</span>
+                    </div>
+                    <div class="bg-gray-50 rounded-xl p-4 flex items-center gap-3">
+                        <i class="fab fa-git-alt text-primary text-xl"></i>
+                        <span>Git & GitHub – Formation personnelle</span>
+                    </div>
+                    <div class="bg-gray-50 rounded-xl p-4 flex items-center gap-3">
+                        <i class="fas fa-code text-primary text-xl"></i>
+                        <span>Algorithmique avancée – Cours en ligne</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Veille & Activités -->
+            <section class="mb-12">
+                <div class="flex items-center gap-3 border-b-3 border-primary pb-2 mb-5">
+                    <i class="fas fa-lightbulb text-2xl text-primary"></i>
+                    <h2 class="text-2xl md:text-3xl font-semibold text-primary">Veille & Activités</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                    <div class="bg-gray-50 rounded-xl p-4 flex items-center gap-3">
+                        <i class="fas fa-newspaper text-primary text-xl"></i>
+                        <span>Lecture : Hacker News, Dev.to, Reddit programming</span>
+                    </div>
+                    <div class="bg-gray-50 rounded-xl p-4 flex items-center gap-3">
+                        <i class="fas fa-cloud-sun text-primary text-xl"></i>
+                        <span>Test d'API : OpenWeather, REST Countries</span>
+                    </div>
+                    <div class="bg-gray-50 rounded-xl p-4 flex items-center gap-3">
+                        <i class="fab fa-github text-primary text-xl"></i>
+                        <span>Contribution open source (correction de documentation)</span>
+                    </div>
+                    <div class="bg-gray-50 rounded-xl p-4 flex items-center gap-3">
+                        <i class="fas fa-users text-primary text-xl"></i>
+                        <span>Membre actif du club informatique de l'école</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Langues -->
+            <section class="mb-8">
+                <div class="flex items-center gap-3 border-b-3 border-primary pb-2 mb-5">
+                    <i class="fas fa-language text-2xl text-primary"></i>
+                    <h2 class="text-2xl md:text-3xl font-semibold text-primary">Langues</h2>
+                </div>
+                <div class="flex flex-wrap gap-3">
+                    <span class="bg-gray-50 rounded-full px-4 py-2 font-medium">🇫🇷 Français – Courant (natif)</span>
+                    <span class="bg-gray-50 rounded-full px-4 py-2 font-medium">🇬🇧 Anglais – B2 (technique)</span>
+                    <span class="bg-gray-50 rounded-full px-4 py-2 font-medium">🇸🇳 Wolof – Langue maternelle</span>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-gray-900 text-white text-center py-8 px-6">
+            <p>© 2025 Macissé Lo - Portfolio étudiant | Ouakam, Dakar</p>
+        </footer>
+    </div>
+</body>
+</html>
